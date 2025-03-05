@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface Aereolinarepositrory extends JpaRepository<Aereolinarepositrory, Long> {
+public interface Aereolinarepositrory extends JpaRepository<Aerolinea, Long> {
     Optional<Aerolinea> findByNombre(String nombre);
 
     List<Aerolinea> findByNombreContainingIgnoreCase(String keyword);
